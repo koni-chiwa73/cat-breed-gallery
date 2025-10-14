@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cat Breed Gallery</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+    <header>
+      <h1>Cat Breed Gallery</h1>
+      <input type="text" id="search" placeholder="Search breeds..."/>
+      <select id="sort">
+        <option value="">Sort by life span</option>
+        <option value="asc">Life Span: Low to High</option>
+        <option value="desc">Life </option>
+      </select>
+    </header>
+
+    <main id="gallery"></main>
+
+    <div id="toast" class="hidden">Adoption Request Sent!</div>
+    
+    <div id="loader" class="loader-container">
+      <p>Cats are coming...</p>
+      <div class="spinner"></div>
+    </div>
+
+    <script type="module" src="script/main.js"></script>
+  </body>
+</html>
